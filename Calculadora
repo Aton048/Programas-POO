@@ -1,0 +1,43 @@
+int main() {
+    double num1, num2, resultado;
+    int opcion;
+
+    cout << "=== Calculadora ===\n";
+    cout << "Ingresa el primer numero: ";
+    cin >> num1;
+    cout << "Ingresa el segundo numero: ";
+    cin >> num2;
+
+    cout << "\nElige una operacion:\n";
+    cout << "1. Sumar\n";
+    cout << "2. Restar\n";
+    cout << "3. Multiplicar\n";
+    cout << "4. Dividir\n";
+    cin >> opcion;
+
+    if (opcion == 1) {
+        resultado = num1 + num2;
+        cout << "Resultado: " << resultado << endl;
+    }
+    else if (opcion == 2) {
+        resultado = num1 - num2;
+        cout << "Resultado: " << resultado << endl;
+    }
+    else if (opcion == 3) {
+        resultado = num1 * num2;
+        cout << "Resultado: " << resultado << endl;
+    }
+    else if (opcion == 4) {
+        if (num2 != 0) {
+            resultado = num1 / num2;
+            cout << "Resultado: " << resultado << endl;
+        } else {
+            cout << "Error: no se puede dividir entre cero" << endl;
+        }
+    }
+    else {
+        cout << "Opcion no valida" << endl;
+    }
+
+    return 0;
+}
