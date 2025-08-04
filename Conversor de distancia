@@ -1,0 +1,15 @@
+
+int main() {
+    double metros, km, millas;
+
+    cout << "Ingresa la distancia en metros: ";
+    cin >> metros;
+
+    km = metros / 1000;
+    millas = metros / 1609.34;
+
+    cout << "En kilometros: " << km << endl;
+    cout << "En millas: " << millas << endl;
+
+    return 0;
+}
