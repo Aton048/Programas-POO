@@ -1,0 +1,15 @@
+int main() {
+    int hora, minuto, segundo;
+
+    cout << "Ingresa la hora: ";
+    cin >> hora;
+    cout << "Ingresa los minutos: ";
+    cin >> minuto;
+    cout << "Ingresa los segundos: ";
+    cin >> segundo;
+
+    cout << "La hora es: " 
+         << hora << ":" << minuto << ":" << segundo << endl;
+
+    return 0;
+}
