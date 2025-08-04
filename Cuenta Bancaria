@@ -1,0 +1,31 @@
+int main() {
+    double saldo = 1000; // saldo inicial
+    double cantidad;
+    int opcion;
+
+    cout << "Saldo actual: $" << saldo << endl;
+    cout << "1. Depositar\n2. Retirar\n";
+    cin >> opcion;
+
+    if (opcion == 1) {
+        cout << "Cantidad a depositar: ";
+        cin >> cantidad;
+        saldo += cantidad;
+        cout << "Nuevo saldo: $" << saldo << endl;
+    }
+    else if (opcion == 2) {
+        cout << "Cantidad a retirar: ";
+        cin >> cantidad;
+        if (cantidad <= saldo) {
+            saldo -= cantidad;
+            cout << "Nuevo saldo: $" << saldo << endl;
+        } else {
+            cout << "No tienes suficiente saldo" << endl;
+        }
+    }
+    else {
+        cout << "Opcion invalida" << endl;
+    }
+
+    return 0;
+}
