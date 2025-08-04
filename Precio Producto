@@ -1,0 +1,18 @@
+int main() {
+    string nombre;
+    int cantidad;
+    double precio, total;
+
+    cout << "Nombre del producto: ";
+    cin >> nombre;
+    cout << "Precio unitario: ";
+    cin >> precio;
+    cout << "Cantidad: ";
+    cin >> cantidad;
+
+    total = precio * cantidad;
+
+    cout << "Total a pagar por " << nombre << ": $" << total << endl;
+
+    return 0;
+}
