@@ -1,0 +1,16 @@
+int main() {
+    double base, altura, area, perimetro;
+
+    cout << "Base del rectangulo: ";
+    cin >> base;
+    cout << "Altura del rectangulo: ";
+    cin >> altura;
+
+    area = base * altura;
+    perimetro = 2 * (base + altura);
+
+    cout << "Area: " << area << endl;
+    cout << "Perimetro: " << perimetro << endl;
+
+    return 0;
+}
